@@ -8,4 +8,6 @@ int main(){
     for(int i=2;i<n;i++)
     p*=i;
     cout<<p/(n/2)<<endl;
+    // n! is for linear arrangement circular is (n-1)! that is nothing but n!/n
+    //  so in this case we have covered circular of first then dividing the other
 }
