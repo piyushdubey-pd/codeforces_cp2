@@ -27,23 +27,23 @@ ll flip(ll k){ if(k==0) return 1; return 0; }
 bool checksum(vector<ll> a,ll sum){ ll i,j,n=a.size(); bool b[n+1][sum+1];  for(i=0;i<=n;i++) b[i][0]=true;  for(i=1;i<=sum;i++) b[0][i]=false;  for(i=1;i<=n;i++){  for(j=1;j<=sum;j++){  if(j<a[i-1]) b[i][j]=b[i-1][j];  else b[i][j]=b[i-1][j] || b[i-1][j-a[i-1]]; } }  return b[n][sum]; } 
  
 void solve(){
-    int n;
+    ll n;
     cin>>n;
-    int arr[n+2];
+    ll arr[n+2];
     arr[0]=0;
     arr[n+1]=0;
-    for(int i=1;i<=n;i++)
+    for(ll i=1;i<=n;i++)
     cin>>arr[i];
 
-    int ug=0;
-    for(int i=1;i<=n;i++){
+    ll ug=0;
+    for(ll i=1;i<=n;i++){
         if(arr[i]>arr[i-1] && arr[i]>arr[i+1])
         {
             ug=ug+(arr[i]-max(arr[i-1],arr[i+1]));
             arr[i]=max(arr[i+1],arr[i-1]);
         }
     }
-    for(int i=1;i<=n;i++)
+    for(ll i=1;i<=n;i++)
     {
         if(arr[i]>arr[i-1])
         ug+=(arr[i]-arr[i-1]);
