@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "cmath": "cpp",
+        "NEW.C": "cpp",
+        "iostream": "cpp",
+        "string": "c",
+        "DSLEA3.C": "cpp",
+        "ostream": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "initializer_list": "cpp",
+        "regex": "cpp",
+        "valarray": "cpp"
+    },
+    "git.ignoreLimitWarning": true
+}
