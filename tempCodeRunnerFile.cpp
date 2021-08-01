@@ -1,2 +1,1 @@
-if(maxrn<0)
-        
+#include<bits/stdc++.h>

@@ -47,6 +47,17 @@ void solve(){
         }
     }
     cout<<sum<<endl;
+
+    // int n,ans=0; cin >> n;
+    //     int arr[n]={0};
+    //     f(i,0,n) cin >> arr[i];
+    //     stack<int> s;
+    //     s.push(arr[n-1]);
+    //     rf(i,n-2,0){
+    //         if(arr[i]>s.top()) ans++;
+    //         else s.push(arr[i]);
+    //     }
+    //     cout << ans << endl;
 }
 int main()
 {
